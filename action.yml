@@ -1,18 +1,18 @@
-name: "gha-comment-pull-request"
-description: "Add comments to pull request. It could also append text to description."
+name: 'edit-pull-request-description'
+description: 'Add comments to pull request. It could also append text to description.'
 inputs:
   pull-request-number:
-    description: "Pull request number. This is required if not running in a pull_request event"
+    description: 'Pull request number. This is required if not running in a pull_request event'
     required: false
   description-message:
-    description: "Append message to pull request description"
+    description: 'Append message to pull request description'
     required: false
   comment-message:
-    description: "Add comment to pull request"
+    description: 'Add comment to pull request'
     required: false
   delete-previous-comment:
-    description: "Delete previous comment"
+    description: 'Delete previous comment'
     required: false
 runs:
-  using: "node12"
-  main: "./index.js"
+  using: 'node16'
+  main: './index.js'

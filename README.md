@@ -1,5 +1,3 @@
-<img src="https://beakyn.com/assets/beakyn-logo-v2-color.png" alt="Beakyn" height="40" />
-
 # Comment Pull Request
 
 Action to add comments and edit description in pull requests
@@ -22,7 +20,7 @@ Create a workflow .yml file in your .github/workflows directory. An example work
 
 ```yaml
 - name: Comment deploy URL to pull request
-  uses: Beakyn/gha-comment-pull-request@v1.0.1
+  uses: Jerome1337/comment-pull-request@v1.0.3
   env:
     GITHUB_TOKEN: ${{ github.token }}
   with:

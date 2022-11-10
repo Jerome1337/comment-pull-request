@@ -20,7 +20,7 @@ Create a workflow .yml file in your .github/workflows directory. An example work
 
 ```yaml
 - name: Comment deploy URL to pull request
-  uses: Jerome1337/comment-pull-request@v1.0.3
+  uses: Jerome1337/comment-pull-request@v1.0.4
   env:
     GITHUB_TOKEN: ${{ github.token }}
   with:
